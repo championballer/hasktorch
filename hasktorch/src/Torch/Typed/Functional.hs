@@ -3369,7 +3369,7 @@ qZeroPoint
   -> Int -- ^ output
 qZeroPoint input = unsafePerformIO $ ATen.cast1 ATen.Managed.q_zero_point_t input
 
--- int_repr :: Tensor device dtype shape -> Tensor device dtype shape -- ^ output
+-- int_repr :: Tensor device dtype shape -> Tensor device dtype shape
 -- int_repr _input = unsafePerformIO $ (ATen.cast1 ATen.Managed.int_repr_t) _input
 
 -- fake_quantize_per_tensor_affine :: Tensor device dtype shape -> Double -> Int -> Int -> Int -> Tensor device dtype shape
