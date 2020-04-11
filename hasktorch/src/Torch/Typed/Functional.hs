@@ -3350,7 +3350,7 @@ numel input = unsafePerformIO $ ATen.cast1 ATen.Managed.tensor_numel input
 --quantize_linear_per_channel :: Tensor device dtype shape -> Tensor device dtype shape -> Tensor device dtype shape -> [Int] -> DType -> Tensor device dtype shape
 --quantize_linear_per_channel _input _scales _zero_points _axis _dtype = unsafePerformIO $ (ATen.cast5 ATen.Managed.quantize_linear_per_channel_tttls) _input _scales _zero_points _axis _dtype
 
--- dequantize :: Tensor device dtype shape -> Tensor device dtype shape 
+-- dequantize :: Tensor device dtype shape -> Tensor device dtype shape
 -- dequantize _input = unsafePerformIO $ (ATen.cast1 ATen.Managed.dequantize_t) _input
 
 -- | qScale
@@ -3369,7 +3369,7 @@ qZeroPoint
   -> Int -- ^ output
 qZeroPoint input = unsafePerformIO $ ATen.cast1 ATen.Managed.q_zero_point_t input
 
--- int_repr :: Tensor device dtype shape -> Tensor device dtype shape -- ^ output
+-- int_repr :: Tensor device dtype shape -> Tensor device dtype shape
 -- int_repr _input = unsafePerformIO $ (ATen.cast1 ATen.Managed.int_repr_t) _input
 
 -- fake_quantize_per_tensor_affine :: Tensor device dtype shape -> Double -> Int -> Int -> Int -> Tensor device dtype shape
